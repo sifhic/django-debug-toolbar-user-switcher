@@ -115,7 +115,7 @@ class UserPanel(Panel):
         return (
             path("users/login/", views.login_form, name="debug-userpanel-login-form"),
             path(
-                "users/login/<uuid:pk>",
+                "users/login/<int:pk>",
                 views.login,
                 name="debug-userpanel-login",
             ),
